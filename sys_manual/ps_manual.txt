@@ -1,0 +1,4 @@
+--[[pod_format="raw",created="2024-03-22 03:04:19",modified="2024-03-22 03:04:30",revision=3]]
+Returns a list of process ids, process names, and cpu usage for all running processes.
+
+Does not accept arguments.

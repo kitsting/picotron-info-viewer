@@ -1,0 +1,10 @@
+--[[pod_format="raw",created="2024-03-22 02:46:10",modified="2024-03-22 02:49:10",revision=20]]
+Usage:
+\ffcp [options] source destination\f7
+
+Options include:
+\f7-o \fdOverwrite folders (instead of copying inside)
+\f7-n \fdNo clobber (do not overwrite existing files)
+
+\f7Copies files and folders from source to destination
+If a file with the same name already exists at the destination, it is \f8deleted\f7 by default

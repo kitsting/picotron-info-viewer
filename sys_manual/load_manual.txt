@@ -1,0 +1,8 @@
+--[[pod_format="raw",created="2024-03-22 03:00:08",modified="2024-03-22 03:00:26",revision=3]]
+Usage:
+\ffload filename\f7
+
+Copies the specified file(s) into \fe/ram/cart\f7. \fffilename\f7 can be a file or a folder.
+This clears out the previously loaded file(s).
+
+If \fffilename\f7 starts with a #, then \ffload\f7 will attempt to download a cartridge from the BBS.

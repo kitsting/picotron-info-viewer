@@ -1,0 +1,6 @@
+--[[pod_format="raw",created="2024-03-22 02:59:18",modified="2024-03-22 02:59:34",revision=3]]
+Usage:
+\ffkill processid\f7
+
+Instantly stops the running process with the specified id.
+You can see a list of processes using \ffprocman\f7 or \ffps\f7.

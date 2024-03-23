@@ -1,0 +1,11 @@
+--[[pod_format="raw",created="2024-03-22 02:56:41",modified="2024-03-22 02:57:24",revision=2]]
+\ffedit\f7 and \ffopen\f7 are equivalent
+
+Usage:
+\ffedit\f7/\ffopen\f7 filename\f7
+
+The editor is chosen automatically based on the extension of the filename.
+\f6Supported extensions:
+\fa.lua .txt .pn .gfx .map .sfx .pod .theme\f7
+
+If the filename is a folder or a .p64 file, then it will be shown in the file browser.

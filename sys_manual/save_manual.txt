@@ -1,0 +1,15 @@
+--[[pod_format="raw",created="2024-03-22 03:06:29",modified="2024-03-22 03:07:48",revision=10]]
+Usage:
+\ffsave [filename]\f7
+
+Save the cartridge in \fe/ram/cart\f7 to disk at the specified location.
+
+If \fffilename\f7 doesn't contain a valid extension,
+it will be given the .p64 extension automatically.
+\f6Valid extensions:
+\fa.p64 .p64.rom .p64.png
+
+\f6If no location is specified:\f7
+	The cartridge is saved to the current working cartridge location.
+\f6If there is no current working cartridge location:\f7
+	The cartridge is saved as \feuntitled.p64\f7"

@@ -1,0 +1,33 @@
+--[[pod_format="raw",created="2024-03-17 21:38:01",modified="2024-03-19 16:51:03",revision=170]]
+Usage:
+\ffinfo [options][command name][page]\f7
+
+Options:
+--system, -s   	\fdLists only the built-in system commands\f7
+--user, -u     	\fdLists only the custom user commands\f7
+--highlight, -h	\fdHighlights commands with no manual in red\f7
+
+When called with no arguments, lists ALL available commands.
+When called with the name of a command, lists usage
+	info for that command if available
+When given a page argument after a command name, shows that
+	page of the command's manual. If no page is given, shows the
+	first page. If the given page is 0, then the entire manual is
+	shown, regardless of page breaks
+
+See page 2 for info on adding manuals
+---
+To add a manual page for a user command:
+a) Create a file named "\fa[command]_manual.txt\f7" alongside the command
+b) Create a file named "\famanual.txt\f7" alongside the \fcmain.lua\f7 if
+   the command is a .p64 file
+c) Add a --[[multiline comment]] to the top of the command's code
+	(in \fc[command].lua\f7 or \fcmain.lua\f7)
+
+The utility will look for manual files in roughly that order.
+
+Page breaks can be added to manuals by putting the string "---"
+	on a line by itself (without the quotation marks). If the page break
+	marker isn't on a line by itself, it'll be displayed normally.
+
+Text colors can be added to manuals using p8scii (\ f0 to \ ff)

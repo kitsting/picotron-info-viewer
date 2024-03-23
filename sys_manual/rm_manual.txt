@@ -1,0 +1,6 @@
+--[[pod_format="raw",created="2024-03-22 03:05:07",modified="2024-03-22 03:05:22",revision=3]]
+Usage:
+\ffrm filename\f7
+
+\fffilename\f7 can be a file or a folder.
+If \fffilename\f7 is a folder, it will be removed regardless of whether it is empty or not.

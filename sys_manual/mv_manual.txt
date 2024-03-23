@@ -1,0 +1,9 @@
+--[[pod_format="raw",created="2024-03-22 03:03:07",modified="2024-03-22 03:03:46",revision=3]]
+Usage:
+\ffmv source destination\f7
+
+Moves the file at \ffsource\f7 to \ffdestination\f7
+If the file already exists at the destination, it is \f8deleted\f7
+
+Functionally equivalent to running \ffcp source destination\f7
+	and \ffrm source\f7 in succession.

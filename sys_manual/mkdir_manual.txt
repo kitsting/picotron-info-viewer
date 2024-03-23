@@ -1,0 +1,6 @@
+--[[pod_format="raw",created="2024-03-22 03:01:13",modified="2024-03-22 03:01:27",revision=2]]
+Usage:
+\ffmkdir path\f7
+
+Makes a new directory at \ffpath\f7.
+Will refuse if a file or folder already exists at that location.

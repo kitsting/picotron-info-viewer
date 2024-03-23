@@ -1,0 +1,6 @@
+--[[pod_format="raw",created="2024-03-22 03:01:49",modified="2024-03-22 03:02:06",revision=2]]
+Usage:
+\ffmount target origin\f7
+
+Mount a directory into another directory. Acts as a shortcut or symbolic link.
+If \fforigin\f7 starts with a ~, then it refers to a path in the host operating system.

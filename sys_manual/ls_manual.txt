@@ -1,0 +1,14 @@
+--[[pod_format="raw",created="2024-03-22 02:55:28",modified="2024-03-22 02:55:32",revision=2]]
+\ffdir\f7 and \ffls\f7 are equivalent
+
+Usage:
+\ffdir\f7/\ffls [directory]\f7
+
+Lists all the files and folders in the specified directory.
+If no directory is specified, \ffdir\f7/\ffls\f7 uses the current directory instead.
+
+\f7Folders are\fe pink
+\f7Mount points are\fb green
+\f7.lua files are\fc blue
+\f7.txt files are\fa yellow
+\f7.pod files are\f9 orange
