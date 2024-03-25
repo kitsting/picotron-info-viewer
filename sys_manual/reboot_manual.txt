@@ -1,0 +1,5 @@
+--[[pod_format="raw",created="2024-03-25 01:12:23",modified="2024-03-25 01:13:25",revision=3]]
+Does nothing (not implemented yet)
+
+To restart Pictron, run \ffshutdown\f7 or select "shutdown" from the
+taskbar menu, then manually open Picotron again

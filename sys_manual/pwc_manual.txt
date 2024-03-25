@@ -1,0 +1,4 @@
+--[[pod_format="raw",created="2024-03-25 01:03:40",modified="2024-03-25 01:04:44",revision=3]]
+Returns the directory of the present working cartridge.
+
+This is where a cartridge is saved when CTRL-S is pressed.

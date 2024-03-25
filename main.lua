@@ -1,20 +1,22 @@
---[[pod_format="raw",created="2024-03-17 02:51:46",modified="2024-03-23 22:48:55",revision=1234]]
+--[[pod_format="raw",created="2024-03-17 02:51:46",modified="2024-03-25 01:13:25",revision=1265]]
 --This command lists all available terminal commands
 --Looks in both /system/util and /appdata/system/util
 
 --Includes
 include "utility.lua"
 
+
+util_name = "infman" --Store the name in a variable incase i need to rename it again u_u
 --==========================================================
 --Installer Mode
 --Copy from /ram/cart to /appdata/system/util/info.p64 if its being run from the bbs
 --==========================================================
 if pwd() == "/ram/cart" then
-	print("Looks like you're trying to run \ffinfo\f7 from a bbs cart (or dev environment)")
+	print("Looks like you're trying to run \ff"..util_name.."\f7 from a bbs cart (or dev environment)")
 	print("Running automatic installer...")
 	mkdir("/appdata/system/util") --Make sure the util directory exists
-	cp("/ram/cart", "/appdata/system/util/info.p64")
-	print("Installation successful! Type '\ffinfo\f7' to get started")
+	cp("/ram/cart", "/appdata/system/util/"..util_name..".p64")
+	print("Installation successful! Type '\ff"..util_name.."\f7' to get started")
 end
 
 
@@ -79,7 +81,7 @@ if not command_given then
 		end
 		print_table(sort(all_commands), 3, 8, highlight_mode)
 	end
-	print("\n\fdHint: type \"info [command]\" to get usage info for that command\n ")
+	print("\n\fdHint: type \""..util_name.." [command]\" to get usage info for that command\n ")
 
 --==========================================================
 --Manual mode
@@ -130,7 +132,7 @@ else --A command has been given
 				print("\fe\t[Page "..tostr(view_page).." of "..tostr(#pages).."]["..get_page_display(view_page, #pages).."]\n")
 				print(pages[view_page])
 				if view_page < #pages then
-					print("\fdType info "..use_command.." "..tostr(view_page+1).." to see the next page")
+					print("\fdType "..util_name.." "..use_command.." "..tostr(view_page+1).." to see the next page")
 				end
 			else --View all pages
 				print("\fe\t[All pages]\n")
@@ -143,6 +145,6 @@ else --A command has been given
 		end	
 		print("")
 	else
-		print("Info: Could not find command \ff"..argv[1].."\f7. Check your spelling!")
+		print(util_name..": Could not find command \ff"..argv[1].."\f7. Check your spelling!")
 	end
 end

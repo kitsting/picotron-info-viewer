@@ -1,0 +1,4 @@
+--[[pod_format="raw",created="2024-03-25 01:11:11",modified="2024-03-25 01:12:07",revision=7]]
+Shuts down Picotron
+
+The same as pressing "shutdown" from the taskbar menu
