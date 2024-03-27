@@ -1,6 +1,6 @@
---[[pod_format="raw",created="2024-03-17 21:38:01",modified="2024-03-19 16:51:03",revision=170]]
+--[[pod_format="raw",created="2024-03-17 21:38:01",modified="2024-03-27 01:57:48",revision=182]]
 Usage:
-\ffinfo [options][command name][page]\f7
+\ff{name} [options][command name][page]\f7
 
 Options:
 --system, -s   	\fdLists only the built-in system commands\f7

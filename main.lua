@@ -1,4 +1,4 @@
---[[pod_format="raw",created="2024-03-17 02:51:46",modified="2024-03-25 01:13:25",revision=1265]]
+--[[pod_format="raw",created="2024-03-17 02:51:46",modified="2024-03-27 02:00:27",revision=1292]]
 --This command lists all available terminal commands
 --Looks in both /system/util and /appdata/system/util
 
@@ -126,6 +126,10 @@ else --A command has been given
 		--Print actual manual
 		local mancontent = get_manual(use_command)			
 		if mancontent then
+			--Special case: update the manual for this command automatically
+			if use_command == util_name then
+				mancontent = mancontent:gsub("{name}", util_name)
+			end
 			local pages = split_manual(mancontent)
 			view_page = min(view_page, #pages)	--Make sure that view_page isnt too high		
 			if view_page > 0 then --View a specific page
